@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">controle cc2</string>
+
+
+    <string name="ajoutS">Ajouter une société</string>
+    <string name="editerS">Editer une société</string>
+    <string name="listerS">Liste de tous les sociétes</string>
+    <string name="btn_save">ENREGISTRER</string>
+    <string name="btn_cancel">ANNULER</string>
 </resources>
