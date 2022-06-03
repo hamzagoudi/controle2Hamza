@@ -55,6 +55,7 @@ public class Societe implements Serializable {
         this.Secteur = secteur;
         this.NbEmploye = nbEmploye;
     }
+
 }
 
 
