@@ -43,7 +43,10 @@ public class modifier extends AppCompatActivity {
         cmb.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
+                Societe ss=s.get(i);
+                nom.setText(ss.getNom());
+                se.setText(ss.getSecteur());
+                nb.setText(String.valueOf(ss.getNbEmploye()));
             }
 
             @Override
