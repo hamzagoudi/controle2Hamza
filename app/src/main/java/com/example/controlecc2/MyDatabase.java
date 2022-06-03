@@ -64,10 +64,10 @@ public class MyDatabase extends SQLiteOpenHelper {
 
     public static Societe getOneSociete(SQLiteDatabase db, int id) {
         Cursor c = db.rawQuery("select * from " + table_name + " where ID=" + id, null);
-        Societe s = null;
+        Societe l = null;
         if (c.moveToNext())
-            s = new Societe(c.getInt(0), c.getString(1), c.getString(2), c.getInt(3));
-        return s;
+            l = new Societe(c.getInt(0), c.getString(1), c.getString(2), c.getInt(3));
+        return l;
     }
 }
 
