@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modifier">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/cb"/>
+
+    <EditText
+        android:id="@+id/txt_nom2"
+
+        style="@style/txt_style"
+        android:layout_below="@id/cb" />
+    <EditText
+        style="@style/txt_style"
+
+        android:layout_below="@id/txt_nom2"
+        android:id="@+id/txt_sec2"/>
+    <EditText
+        style="@style/txt_style"
+
+        android:layout_below="@id/txt_sec2"
+        android:id="@+id/txt_nb2"/>
+    <Button
+        style="@style/btn_styleV2"
+
+        android:id="@+id/btn_up"
+        android:layout_below="@id/txt_nb2"/>
+    <Button
+        style="@style/btn_styleV2"
+
+        android:id="@+id/btn_del"
+        android:layout_alignBaseline="@id/btn_up"
+        android:layout_toRightOf="@id/btn_up"/>
+
+</RelativeLayout>
